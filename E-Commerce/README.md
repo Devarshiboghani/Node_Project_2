@@ -68,13 +68,10 @@ GET    /api/user/profile
 
 📦 Category
 
-POST     /api/category/add-category
-
-GET      /api/category/get-categories
-
-PUT      /api/category/update-category/:id
-
-DELETE   /api/category/delete-category/:id
+POST   /api/category/add-category
+GET    /api/category/get-categories
+PUT    /api/category/update-category/:id
+DELETE /api/category/delete-category/:id
 
 📂 SubCategory
 
