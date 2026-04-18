@@ -56,9 +56,9 @@ Authorization: Bearer
 
 👤 User
 
-POST /api/register
-POST /api/login
-GET /api/user/profile
+POST   /api/register
+POST   /api/login
+GET    /api/user/profile
 
 📦 Category
 
