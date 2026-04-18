@@ -68,51 +68,51 @@ GET    /api/user/profile
 
 📦 Category
 
-POST   /api/category/add-category
+POST     /api/category/add-category
 
-GET    /api/category/get-categories
+GET      /api/category/get-categories
 
-PUT    /api/category/update-category/:id
+PUT      /api/category/update-category/:id
 
-DELETE /api/category/delete-category/:id
+DELETE   /api/category/delete-category/:id
 
 📂 SubCategory
 
-POST   /api/subcategory/add-subcategory
+POST    /api/subcategory/add-subcategory
 
-GET    /api/subcategory/all-subcategories
+GET     /api/subcategory/all-subcategories
 
-PUT    /api/subcategory/update-subcategory/:id
+PUT     /api/subcategory/update-subcategory/:id
 
-DELETE /api/subcategory/delete-subcategory/:id
+DELETE  /api/subcategory/delete-subcategory/:id
 
 🛍️ Products
 
-POST   /api/product/add-product
+POST    /api/product/add-product
 
-GET    /api/product/all-products
+GET     /api/product/all-products
 
-PUT    /api/product/update-product/:id
+PUT     /api/product/update-product/:id
 
-DELETE /api/product/delete-product/:id
+DELETE  /api/product/delete-product/:id
 
-GET    /api/product?category=&subCategory=
+GET     /api/product?category=&subCategory=
 
 🛒 Cart
 
-POST /api/carts/add-cart
+POST   /api/carts/add-cart
 
-GET  /api/carts/get-cart
+GET    /api/carts/get-cart
 
-PUT  /api/carts/remove-cart
+PUT    /api/carts/remove-cart
 
 ❤️ Wishlist
 
-POST /api/wishlist/add-wishlist
+POST   /api/wishlist/add-wishlist
 
-GET  /api/wishlist/get-wishlist
+GET    /api/wishlist/get-wishlist
 
-PUT  /api/wishlist/remove-wishlist
+PUT    /api/wishlist/remove-wishlist
 
 ## 📌 Author
 
