@@ -52,12 +52,18 @@ Server runs at: http://localhost:5550
 
 Authorization: Bearer
 
+## 🌐 Base API
+
+/api
+
 ## 📌 API Endpoints
 
 👤 User
 
 POST   /api/register
+
 POST   /api/login
+
 GET    /api/user/profile
 
 📦 Category
