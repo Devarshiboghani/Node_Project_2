@@ -56,25 +56,33 @@ Authorization: Bearer
 👤 Auth
 
 POST   /api/auth/register
+
 POST   /api/auth/login
 
 🎬 Movies
 
 POST   /api/movies/add-movie
+
 GET    /api/movies
+
 GET    /api/movies/:id
+
 PUT    /api/movies/:id
+
 DELETE /api/movies/:id
 
 🕒 Shows
 
 POST   /api/shows/create-show
+
 GET    /api/shows
 
 💺 Booking
 
 POST   /api/bookings
+
 GET    /api/bookings/my-booking
+
 PUT    /api/bookings/cancel/:id
 
 ## 👨‍💻 Author
