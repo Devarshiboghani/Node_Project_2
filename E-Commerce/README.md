@@ -61,57 +61,41 @@ Authorization: Bearer
 👤 User
 
 POST   /api/register
-
 POST   /api/login
-
 GET    /api/user/profile
 
 📦 Category
 
 POST     /api/category/add-category 
-
 GET      /api/category/get-categories
-
 PUT      /api/category/update-category/:id
-
 DELETE   /api/category/delete-category/:id
 
 📂 SubCategory
 
 POST    /api/subcategory/add-subcategory
-
 GET     /api/subcategory/all-subcategories
-
 PUT     /api/subcategory/update-subcategory/:id
-
 DELETE  /api/subcategory/delete-subcategory/:id
 
 🛍️ Products
 
 POST    /api/product/add-product
-
 GET     /api/product/all-products
-
 PUT     /api/product/update-product/:id
-
 DELETE  /api/product/delete-product/:id
-
 GET     /api/product?category=&subCategory=
 
 🛒 Cart
 
 POST   /api/carts/add-cart
-
 GET    /api/carts/get-cart
-
 PUT    /api/carts/remove-cart
 
 ❤️ Wishlist
 
 POST   /api/wishlist/add-wishlist
-
 GET    /api/wishlist/get-wishlist
-
 PUT    /api/wishlist/remove-wishlist
 
 ## 📌 Author
