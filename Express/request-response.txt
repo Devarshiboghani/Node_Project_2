@@ -1,0 +1,122 @@
+=> 🧠 Simple Definition : Request Object (req) ek object hota hai jo client (browser/Postman) se aane wali poori request ki information store karta hai
+
+
+=> request : 
+
+=> 1. req.app : ye current Express app(application) ka reference deta hai, isse aap app ke setting, methods ya variables access kar sakte ho
+
+=> 2. req.baseUrl : jaha aap multiple routers use karte ho tab ye bade URL return karta hai, ye mainly large applications me use hota hai
+
+=> 3. req.body : user ne form me ya API ke through jo data bheja hai wo yaha milta hai, mostly POST, PUT, PATCH me use hota hai
+
+=> 4. req.cookies : Browser ke cookies ka data return karta hai, iske liye cookie-parser middleware use hota hai
+
+=> 5. req.signedCookies : signed (secure) cookies ko access karne ke liye use hota hai
+
+=> 6. req.fresh : check kata hai response fresh bhejna hai ya cached version use karna hai (ye check karta hai hme response naya bhejna hai ya browser ka purana use karna hai)
+
+=> 7. req.stale : ye req.fresh ka opposite hota hai (agar fresh false hai to stale true hoga)
+
+=> 8. req.host : user ne kis host(domain + port) par request bheji hai 
+
+=> 9. req.hostname : sirf domain name deta hai (port ke bina)
+
+=> 10. req.ip : client ka IP addressg deta hai
+
+=> 11. req.ips : agar proxy use ho rahi hai to multiple IP addresses deta hai
+                multiple IP address (array me) 
+                request beech me kai server (proxy) se hokar aayi ho, to sab IPs ki list
+
+=> 12. req.method : request ka HTTP method batata hai(GET, POST, PUT, PATCH, DELETE, etc.)
+
+=> 13. req.originalUrl : original URL batata hai (middleware se pehle wala URL)
+
+=> 14. req.url : current request ka full URL deta hai
+
+=> 15. req.path : URL ka sirf path part deta hai
+
+=> 16. req.params : route ke dynamic parameters ko access karne ke liye use hota hai
+
+=> 17. req.query : URL ke query parameters ko access karta hai, Example : ?name=rahul
+
+=> 18. req.protocol : batata hai ki request http se aayi hai ya https se
+
+=> 19. req.secure : agar HTTPS hai to true return karega
+
+=> 20. req.route : current matched route ki information deta hai
+
+=> 21. req.subdomains : URL ke subdomains ke array deta hai
+
+=> 22. req.xhr : check karta hai request AJAX (XMLHttpRequest) hai ya nahi
+
+=> 23. req.headers : client ke saare headers ka data deta hai, jaise content-type, authorization, etc.
+
+=> 24. req.rawHeaders : headers ko raw array format me deta hai
+
+=> 25. req.httpVersion : HTTP protocol ka version batata hai (1.1, 2, etc.)
+
+=> 26. req.socket : network socket ki information deta hai
+
+
+=> Methods : 
+
+=> 1. req.get(field) : kisi specific header ko access karne ke liye use hota hai
+
+=> 2. req.accepts(types) : client kaunsa content type accept karta hai (json, html, etc.)
+
+=> 3. req.acceptsCharsets() : client kaunsa charset support karta hai
+
+=> 4. req.acceptsEncodings() : client kaunsi encoding support karta hai (gzip, etc.)
+
+=> 5. req.acceptsLanguages() : client ki preferred language batata hai
+
+=> 6. req.is(type) : request ka content-type check karta hai
+
+=> 7. req.file : single file upload data (multer use karte time)
+
+=> 8. req.files : multiple file uploads ke liye use hota hai
+
+=> 9. req.range(size) : user(client) ne file ka kaunsa part (range) maanga hai, wo batata hai
+
+
+=> response : 
+
+=> 1. res.send : client ko response bhejne ke liye use hota hai, string, object, array sab send kar sakte ho
+
+=> 2. res.json : JSON format me data bhejne ke liye use hota hai, mostly APIs me use hota hai
+
+=> 3. res.status(code) : response ka status code set karta hai (200, 404, 500, etc.)
+
+=> 4. res.sendStatus(code) : status code set karta hai aur uska default message bhi send karta hai
+
+=> 5. res.redirect(url) : client ko kisi dusre URL par redirect karta hai                      
+
+=> 6. res.render(view) : template engine (EJS, Pug, etc.) use karke HTML render karta hai
+
+=> 7. res.sendFile(path) : kisi file ko directly client ko bhejne ke liye use hota hai 
+
+=> 8. res.download(path) : file ko download karwane ke liye use hota hai
+
+=> 9. res.end : response ko end karta hai
+
+=> 10. res.set(field, value) : response headers set karne ke liye use hota hai
+
+=> 11. res.get(field) : response ke headers ko read karne ke liye use hota hai
+
+=> 12. res.header(field, value) : res.set ka shortcut hai
+
+=> 13. res.type(type) :
+=> 14. res.cookie(name, value) :
+=> 15. res.clearCookie(name) :
+=> 16. res.append(field, value) :
+=> 17. res.location(path) : 
+=> 18. res.links(links) :
+=> 19. res.format(object) :
+=> 20. res.vary(field) :
+=> 21. res.charset :
+=> 22. res.locals : 
+=> 23. res.headersSent :
+=> 24. res.statusMessage : 
+=> 25. res.flushHeaders() :
+=> 26. res.write() :
+=> 27. res.jsonp() : 

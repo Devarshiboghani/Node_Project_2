@@ -1,0 +1,38 @@
+(1) What is DataBase?
+=> Data + base 
+=> Store and Organized of data
+=> A Database is a structured collection of data that is stored, organized and managed so it can be easily accessed, updated and retrieved.
+
+(2) What is DBMS?
+=> A Database Management System (DBMS) is software used to manage databases.
+Example : Oracle Database
+          Microsoft SQL Server
+
+(3) Types of Databases :
+    1. Relational Database(RDBMS) : Data stored in tables. Example : MySQL, PostgreSQL
+    2. NoSQL Database : Flexible data storage(JSON, key-value, etc..) Example : MongoDB
+    3. Cloud Database : Hosted online. Example : Firebase
+
+Database = Data ka organized collection
+DBMS = Software jo database ko manage karta hai
+
+Databases are mainly divided into two types:
+=> SQL (Relational Database)
+=> NoSQL (Non-Relational Database)
+
+(1) SQL Databases (Relational Database)
+=> SQL = Structured Query Language
+=> Table (row, col)
+=> col => field
+=> row => data
+=> SQL databases store data in tables(rows & columns) and follow a fixed structure
+=> Example : MySQL, PostgreSQL, Oracle Database, Microsoft SQL Server
+=> Best Use Cases : Banking systems, E-commerce orders, School/collage Management
+
+(2) NoSQL Databases (Non-Relational Database)
+=> NoSQL = Not Only SQL (Not Structured Query Language)
+=> Object (key, value)
+=> key => field
+=> value => data
+=> NoSQL databases store data in flexible formats like JSON, key-value, graph or documents.
+=> Example : MongoDB, Cassandra, Redis, Firebase
