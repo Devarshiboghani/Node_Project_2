@@ -1,3 +1,0 @@
-Hi NodeJS
-This is new data
-Appending new line sync
